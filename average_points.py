@@ -44,8 +44,14 @@ class Rect():
 
 
 if __name__ == '__main__':
-    a = Point(3, 4)
-    b = Point(5.5, 0)
+    import sys
+
+    x1 = float(sys.argv[1])
+    y1 = float(sys.argv[2])
+    x2 = float(sys.argv[3])
+    y2 = float(sys.argv[4])
+    a = Point(x1, y1)
+    b = Point(x2, y2)
 
     r = Rect(a, b)
 
